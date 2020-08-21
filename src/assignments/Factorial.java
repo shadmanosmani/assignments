@@ -21,7 +21,7 @@ public class Factorial {
 
 		} else {
 
-			int factorial = 1;
+			long factorial = 1;
 
 			for (int i = 2; i <= number; i++) {
 
