@@ -2,11 +2,11 @@ package assignments;
 
 import java.util.Scanner;
 
-public class LargestFromThreeNumbers {
+public class LargestAndSmallestFromThreeNumbers {
 
 	public static void main(String[] args) {
 
-		int number, largest = 0;
+		int number, smallest = 0, largest = 0;
 
 		Scanner scanner = new Scanner(System.in);
 
@@ -15,10 +15,12 @@ public class LargestFromThreeNumbers {
 
 			number = scanner.nextInt();
 
-			largest = largest < number ? number : largest;
+			smallest = smallest == 0 ? number : number < smallest ? number : smallest;
+			largest = number > largest ? number : largest;
 
 		}
 
+		System.out.println(smallest + " is the smallest number");
 		System.out.println(largest + " is the largest number");
 
 		scanner.close();
