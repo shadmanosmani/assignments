@@ -1,8 +1,8 @@
-package assignments;
+package assignments.one;
 
 import java.util.Scanner;
 
-public class SumOfSquareOfNumbersUptoGivenRange {
+public class SumOfOddNumbersUptoGivenRange {
 
 	public static void main(String[] args) {
 
@@ -13,13 +13,13 @@ public class SumOfSquareOfNumbersUptoGivenRange {
 
 		int sum = 0;
 
-		for (int i = 1; i <= upperLimit; i ++) {
+		for (int i = 1; i <= upperLimit; i += 2) {
 
-			sum += Math.pow(i, 2);
+			sum += i;
 
 		}
 
-		System.out.println("Sum of square of numbers upto " + upperLimit + " is " + sum);
+		System.out.println("Sum of odd numbers upto " + upperLimit + " is " + sum);
 
 		scanner.close();
 
