@@ -6,11 +6,11 @@ public class Vehicle {
 
 	int mileage;
 
+	String modelNumber;
+
 	public String getColour() {
 		return colour;
 	}
-
-	String modelNumber;
 
 	public String getModelNumber() {
 		return modelNumber;
